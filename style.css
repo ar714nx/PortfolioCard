@@ -9,7 +9,7 @@ body {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     max-width: 400px;
-    margin: 3rem auto; /* center on all screens */
+    margin: 10rem auto; /* center on all screens */
     padding: 1.5rem;
     text-align: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -130,3 +130,4 @@ button.contact:hover .material-symbols-outlined {
         max-width: 140px;
     }
 }
+
