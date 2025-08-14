@@ -28,7 +28,7 @@ h1.name{
     text-align: center;
     
 }
-span{
+span.head{
  transition: 0.5s ease-in-out;
  color: rgb(17, 92, 92);
  font-weight: 900;
@@ -47,4 +47,45 @@ p.description{
     text-align: center;
     margin: 20px;
     color: rgb(0, 0, 0);
+}
+span.founder{
+    color: #032442;
+    font-weight: 900;
+    font-family: 'exo 2', sans-serif;
+}
+.button{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button.contact{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+transition: 0.3s ease-in-out;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 10px;}
+button.contact:hover{
+    background-color: rgb(14, 60, 58);
+    color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+button.contact a{
+    text-decoration: none;
+    color: inherit;
+}
+button.contact .material-symbols-outlined {
+    transition: transform 0.3s ease-in-out;
+}
+
+button.contact:hover .material-symbols-outlined {
+    transform: translateX(10px);
 }
