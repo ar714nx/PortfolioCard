@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(117, 116, 116)
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    margin: 70px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    max-width: 400px;
+}
+.profile-picture{
+    margin-top: 30px;
+    margin-bottom: -10px;
+    margin-left: 7rem;
+    height:160px;
+    border-radius: 19rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+.profile-picture:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+h1.name{
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    
+}
+span{
+ transition: 0.5s ease-in-out;
+ color: rgb(17, 92, 92);
+ font-weight: 900;
+}
+span.dev{
+    color: rgb(31, 82, 89);
+    font-weight: 900;
+    font-family: 'exo 2', sans-serif;
+}
+h1.name:hover span{
+    color: rgb(17, 36, 36);
+    font-weight: 900;
+}
+p.description{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+}
