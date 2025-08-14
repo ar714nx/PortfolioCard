@@ -1,91 +1,132 @@
-body{
-    background-color: rgb(117, 116, 116)
+/* --- Body & Card --- */
+body {
+    background-color: rgb(117, 116, 116);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-.card{
+
+.card {
     background-color: rgb(255, 255, 255);
-    margin: 70px;
-    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
-    margin-top: 10rem;
-    margin-left: 10rem;
     max-width: 400px;
+    margin: 3rem auto; /* center on all screens */
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-.profile-picture{
-    margin-top: 30px;
-    margin-bottom: -10px;
-    margin-left: 7rem;
-    height:160px;
-    border-radius: 19rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+/* --- Profile Picture --- */
+.profile-picture {
+    height: 30vw;
+    max-height: 160px;
+    width: 30vw;
+    max-width: 160px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
 }
-.profile-picture:hover{
+
+.profile-picture:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
 }
-h1.name{
+
+/* --- Name --- */
+h1.name {
     font-family: 'Exo 2', sans-serif;
-    text-align: center;
-    
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
 }
-span.head{
- transition: 0.5s ease-in-out;
- color: rgb(17, 92, 92);
- font-weight: 900;
-}
-span.dev{
-    color: rgb(31, 82, 89);
+
+span.head {
+    color: rgb(17, 92, 92);
     font-weight: 900;
-    font-family: 'exo 2', sans-serif;
+    transition: 0.5s ease-in-out;
 }
-h1.name:hover span{
+
+h1.name:hover span {
     color: rgb(17, 36, 36);
-    font-weight: 900;
 }
-p.description{
+
+/* --- Description --- */
+p.description {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin: 20px;
-    color: rgb(0, 0, 0);
+    margin: 1rem 0;
+    color: rgb(0,0,0);
+    line-height: 1.5;
 }
-span.founder{
-    color: #032442;
+
+span.dev, span.founder {
     font-weight: 900;
-    font-family: 'exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
-.button{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+span.dev { color: rgb(31, 82, 89); }
+span.founder { color: #032442; }
+
+/* --- Button --- */
+.button {
+    margin-top: 1.5rem;
 }
-button.contact{
-    background-color: rgb(255, 255, 255);
+
+button.contact {
+    background-color: rgb(255,255,255);
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px 20px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
-    color: rgb(0, 0, 0);
+    color: rgb(0,0,0);
     cursor: pointer;
-transition: 0.3s ease-in-out;
-display: inline-flex;
-align-items: center;
-justify-content: center;
-gap: 10px;}
-button.contact:hover{
-    background-color: rgb(14, 60, 58);
-    color: rgb(255, 255, 255);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.05);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
 }
-button.contact a{
+
+button.contact a {
     text-decoration: none;
     color: inherit;
 }
+
+button.contact:hover {
+    background-color: rgb(14, 60, 58);
+    color: rgb(255,255,255);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* --- Arrow Animation --- */
 button.contact .material-symbols-outlined {
     transition: transform 0.3s ease-in-out;
 }
 
 button.contact:hover .material-symbols-outlined {
     transform: translateX(10px);
+}
+
+@media (max-width: 500px) {
+    .card {
+        margin: 2rem 1rem;
+        padding: 1rem;
+    }
+    h1.name {
+        font-size: 1.4rem;
+    }
+    p.description {
+        font-size: 0.9rem;
+    }
+    button.contact {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    .profile-picture {
+        height: 40vw;
+        width: 40vw;
+        max-height: 140px;
+        max-width: 140px;
+    }
 }
